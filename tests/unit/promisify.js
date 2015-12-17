@@ -3,7 +3,6 @@
 var chai = require('chai');
 var assert = chai.assert;
 
-var Promise = require('bluebird');
 var promisify = require('../../lib/promisify');
 
 var square = function(value, callback) {

@@ -1,14 +1,13 @@
-# Couchbase Promises
-A lightweight, drop-in replacement for the Couchnode module with added support for A+ Promises.
+# Couchbase ECMAScript Promises
 
-[![Build Status](https://secure.travis-ci.org/dsfields/couchbase-promises.svg)](https://travis-ci.org/dsfields/couchbase-promises)
+[![Build Status](https://secure.travis-ci.org/dsfields/couchbase-es-promises.svg)](https://travis-ci.org/dsfields/couchbase-es-promises)
 
 ## Overview
-Just like the [Couchbase Node.js module](http://developer.couchbase.com/documentation/server/4.0/sdks/node-2.0/introduction.html), but with the addition of `*Async()` methods that return A+ Promises for all methods that contain a Node.js callback parameter.  Both the normal Couchnode and the mock Couchnode APIs have been fully promisified.
+Just like the [Couchbase Node.js SDK](http://developer.couchbase.com/documentation/server/4.0/sdks/node-2.0/introduction.html), but with the addition of `*Async()` methods that return A+ Promises for all methods that contain a Node.js callback parameter.  Both the normal Couchnode and the mock Couchnode APIs have been fully promisified.  This module functions as a drop-in replacement for the [couchbase](https://www.npmjs.com/package/couchbase) module.
 
 The current version supports Couchbase Node.js SDK version 2.1.2.
 
-Promises are created using the [Bluebird](http://bluebirdjs.com/docs/getting-started.html) Promises library.
+Promises are created using native ECMAScript Promises.  
 
 ## General Usage
 Usage is almost exactly the same as the native SDK, but with the added ability to use Promises instead of callbacks.
@@ -16,7 +15,7 @@ Usage is almost exactly the same as the native SDK, but with the added ability t
 A user repository module with a simple lookup...
 
 ```js
-let couchbase = require('couchbase-promises');
+let couchbase = require('couchbase-es-promises');
 let cluster = new couchbase.Cluster('couchbase://127.0.0.1');
 let bucket = cluster.openBucket();
 

@@ -1,11 +1,10 @@
 {
-  "name": "couchbase-promises",
-  "longName": "Couchbase Promises",
+  "name": "couchbase-es-promises",
+  "longName": "Couchbase ECMAScript Promises",
   "description": "An A+ Promises wrapper for the Couchbase SDK.",
-  "version": "1.0.1",
+  "version": "1.0.0",
 
   "dependencies": {
-    "bluebird": "^3.0.5",
     "couchbase": "^2.1.2"
   },
   "devDependencies": {
@@ -21,7 +20,6 @@
   "keywords": [
     "couchbase",
     "promises",
-    "bluebird",
     "data",
     "nosql"
   ],
