@@ -7,7 +7,7 @@ Just like the [Couchbase Node.js SDK](http://developer.couchbase.com/documentati
 
 The current version supports Couchbase Node.js SDK version 2.1.2.
 
-Promises are created using native ECMAScript Promises.  
+Promises are created using native ECMAScript Promises.  Only use this module if you _absolutely_ need native ECMAScript Promises (and you probably don't).  Otherwise stick to using the [couchbase-promises](https://www.npmjs.com/package/couchbase-promises) module; which, uses the [Bluebird](http://bluebirdjs.com/docs/getting-started.html) Promises library and offers [an order of magnitude more performance](https://github.com/petkaantonov/bluebird/tree/master/benchmark) than native ES Promises.
 
 ## General Usage
 Usage is almost exactly the same as the native SDK, but with the added ability to use Promises instead of callbacks.
