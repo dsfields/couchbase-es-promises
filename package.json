@@ -2,7 +2,7 @@
   "name": "couchbase-es-promises",
   "longName": "Couchbase ECMAScript Promises",
   "description": "An A+ Promises wrapper for the Couchbase SDK.",
-  "version": "2.0.0",
+  "version": "1.0.2",
 
   "dependencies": {
     "couchbase": "^2.1.2"
